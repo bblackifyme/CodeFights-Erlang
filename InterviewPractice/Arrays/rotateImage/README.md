@@ -1,4 +1,4 @@
-# Arrays 2 - rotateImage
+# Arrays 3 - rotateImage
 
 > Warning: I claim no authority that this is the best (or even a good) solution. Just sharing my own experience and solution.
 
