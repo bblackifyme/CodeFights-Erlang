@@ -107,8 +107,6 @@ rotateImage.erl:7:
 
 ## Conclusion
 
-It took me a while and several iterations to get through this one Erlang. I came to realize the extent to which I have become reliant on abstractions like Python Dictionaries (in which this was a trivial use case).
+This project became quite tricky to complete. The hardest part was by far determining a mechanism to 'zip' / 'transpose' the list of lists into index based new lists (all index 0 goes in list 0, all index 1 go in list 1 etc..). As Erlang natively does not offer a N length zip functionality, we had to develop our own in the transpose function. Once that was complete this was easy peasy!
 
-I tried several methods with other datatypes like dicts and orddicts, however kept hitting issues with ordering/indexing. Since the problem statement requires knowing the order of appearance I could not rely on sorted structures. Eventually I stumbled upon proplists and had to do some research into the use and methods.
-
-In summary this was quite fun and I learned more about proplists and solving problems recursively.
+This was challenging, however great practice at solving problems functionally.
