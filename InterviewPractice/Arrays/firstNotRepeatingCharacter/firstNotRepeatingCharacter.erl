@@ -17,7 +17,7 @@ tail_reverse([],Acc) -> Acc;
 tail_reverse([H|T],Acc) -> tail_reverse(T, [H|Acc]).
 
 findfirst([]) -> cleaner("_");
-findfirst([{C, 1}|T]) -> C;
-findfirst([H|T]) -> findfirst(T).
+findfirst([{C, 1}|_]) -> C;
+findfirst([_|T]) -> findfirst(T).
 
-cleaner([H|T]) -> H.
+cleaner([H|_]) -> H.
